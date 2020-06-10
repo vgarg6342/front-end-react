@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import './App.css';
 import {createStore} from 'redux'
 
+//action
 const increment = ()=>{
   return{
     type:'INCREMENT'
@@ -18,6 +19,7 @@ const decrement = ()=>{
   }
 }
 
+//reducer
 const counter = (state =0, action)=> {
   switch(action.type){
     case "INCREMENT":
@@ -29,11 +31,12 @@ const counter = (state =0, action)=> {
   }
 
 };
-
+//store
 let store = createStore(counter)
 
 store.subscribe(()=>console.log(store.getState()));
 
+//dispacher
 store.dispatch(increment())
 store.dispatch(increment())
 

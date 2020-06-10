@@ -3,7 +3,6 @@ import GoogleBtn  from './GoogleButton';
 
 
 function login() {
-   // the stored user data from the authentication
   
    const onLogout = ()=>{
        window.location.href = '/'

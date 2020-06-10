@@ -22,7 +22,6 @@ function UserDetails(){
     console.log(gender)
   }
 
-
   return(
     <form onSubmit = {updateUser}>
       <input type = 'text' name= 'name' value = {college} onChange = {collegeHandler}/>

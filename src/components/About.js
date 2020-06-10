@@ -12,6 +12,7 @@ function About() {
         <ControlledCarousel/>
       </Container>
     </div>
+   
 
   );
 }
